@@ -24,6 +24,6 @@ public class ProcessInstanceResource extends AbstractCockpitPluginResource {
     return getQueryService()
         .executeQuery(
           "org.example.camunda.bpm.selectProcessInstanceCountsByProcessDefinition",
-          new QueryParameters<ProcessInstanceCountDto>());
+          new QueryParameters());
   }
 }
