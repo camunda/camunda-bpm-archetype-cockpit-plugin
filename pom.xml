@@ -21,6 +21,8 @@
     -->
     <camunda.version>7.20.0</camunda.version>
 
+    <jakarta.ws.rs-api.version>3.1.0</jakarta.ws.rs-api.version>
+
     <!-- This property must be present for the pom.xml to be recognized as a plugin -->
     <camunda.plugin.category>Please select one of Sample|Monitoring|Exploration|Business</camunda.plugin.category>
 
@@ -65,11 +67,11 @@
     </dependency>
 
     <!-- Java EE 6 APIs -->
+
     <dependency>
-      <groupId>javax</groupId>
-      <artifactId>javaee-api</artifactId>
-      <version>6.0</version>
-      <scope>provided</scope>
+      <groupId>jakarta.ws.rs</groupId>
+      <artifactId>jakarta.ws.rs-api</artifactId>
+      <version>${jakarta.ws.rs-api.version}</version>
     </dependency>
 
   </dependencies>
